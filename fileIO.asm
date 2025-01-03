@@ -8,14 +8,16 @@ _start:
 	move $t1, $v0 #stores file desc
 	
 	#writes
-	la $a1, t1 
+	move $a0, $t1 # gets file desc from memory
 	la $a1, output
 	li $a2, 30
 	li $v0, 15
 	syscall 
 	
 	#closes
-	la
+	move $a0, $t1
+	li $v0, 16
+	syscall 
 	
 	
 	li $v0, 10   # exit syntax 
