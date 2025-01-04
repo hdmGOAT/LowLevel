@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-    printf("I \n");
-    printf("aksjdfjasdfjk");
-    
+    int age = 21;
+
+    printf("you are %d years old", age);
 }
