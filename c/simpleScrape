@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+int main(int argc, char *argv[]){
+  //Take in argument Url
+  //Scrape options: images, text, elements, video(?)
+
+  return 0;
+}
